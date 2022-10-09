@@ -15,6 +15,20 @@ namespace LoginAndRegistration
         public Form1()
         {
             InitializeComponent();
+            UserRepository nekiIme = new UserRepository();
+        }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            User user = UserRepository.IsUser(txtUsername.Text, txtPassword.Text);
+            if (user != null)
+            {
+                MessageBox.Show("User " + user.FirstName  + " " + user.LastName + " is successfully Logged In!");
+            } 
+            else
+            {
+                MessageBox.Show("Entered credentials are not valid!");
+            }
         }
     }
 }
