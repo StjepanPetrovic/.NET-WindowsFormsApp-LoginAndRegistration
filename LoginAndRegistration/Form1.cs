@@ -30,5 +30,13 @@ namespace LoginAndRegistration
                 MessageBox.Show("Entered credentials are not valid!");
             }
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            Hide();
+            RegistrationForm registracija = new RegistrationForm();
+            registracija.ShowDialog();
+            Close();
+        }
     }
 }

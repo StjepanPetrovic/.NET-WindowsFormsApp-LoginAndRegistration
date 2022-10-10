@@ -38,8 +38,8 @@
             this.txtLastname = new System.Windows.Forms.TextBox();
             this.radBtnEmployee = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radBtnGuest = new System.Windows.Forms.RadioButton();
             this.radBtnAdministrator = new System.Windows.Forms.RadioButton();
+            this.radBtnGuest = new System.Windows.Forms.RadioButton();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -115,7 +115,7 @@
             this.radBtnEmployee.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.radBtnEmployee.Location = new System.Drawing.Point(23, 30);
             this.radBtnEmployee.Name = "radBtnEmployee";
-            this.radBtnEmployee.Size = new System.Drawing.Size(113, 25);
+            this.radBtnEmployee.Size = new System.Drawing.Size(90, 20);
             this.radBtnEmployee.TabIndex = 8;
             this.radBtnEmployee.TabStop = true;
             this.radBtnEmployee.Text = "Employee";
@@ -133,27 +133,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "User type:";
             // 
-            // radBtnGuest
-            // 
-            this.radBtnGuest.AutoSize = true;
-            this.radBtnGuest.Location = new System.Drawing.Point(23, 60);
-            this.radBtnGuest.Name = "radBtnGuest";
-            this.radBtnGuest.Size = new System.Drawing.Size(79, 25);
-            this.radBtnGuest.TabIndex = 9;
-            this.radBtnGuest.TabStop = true;
-            this.radBtnGuest.Text = "Guest";
-            this.radBtnGuest.UseVisualStyleBackColor = true;
-            // 
             // radBtnAdministrator
             // 
             this.radBtnAdministrator.AutoSize = true;
             this.radBtnAdministrator.Location = new System.Drawing.Point(23, 92);
             this.radBtnAdministrator.Name = "radBtnAdministrator";
-            this.radBtnAdministrator.Size = new System.Drawing.Size(133, 25);
+            this.radBtnAdministrator.Size = new System.Drawing.Size(106, 20);
             this.radBtnAdministrator.TabIndex = 10;
             this.radBtnAdministrator.TabStop = true;
             this.radBtnAdministrator.Text = "Administrator";
             this.radBtnAdministrator.UseVisualStyleBackColor = true;
+            // 
+            // radBtnGuest
+            // 
+            this.radBtnGuest.AutoSize = true;
+            this.radBtnGuest.Location = new System.Drawing.Point(23, 60);
+            this.radBtnGuest.Name = "radBtnGuest";
+            this.radBtnGuest.Size = new System.Drawing.Size(63, 20);
+            this.radBtnGuest.TabIndex = 9;
+            this.radBtnGuest.TabStop = true;
+            this.radBtnGuest.Text = "Guest";
+            this.radBtnGuest.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
@@ -163,6 +163,7 @@
             this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -172,6 +173,7 @@
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // RegistrationForm
             // 

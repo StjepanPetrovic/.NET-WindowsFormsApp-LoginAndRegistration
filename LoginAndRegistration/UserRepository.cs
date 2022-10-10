@@ -36,5 +36,10 @@ namespace LoginAndRegistration
             }
             return null;
         }
+
+        public static void NewUser (User user)
+        {
+            users.Add(user);
+        }
     }
 }
