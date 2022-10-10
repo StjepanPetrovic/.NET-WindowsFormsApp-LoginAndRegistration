@@ -1,6 +1,6 @@
 ﻿namespace LoginAndRegistration
 {
-    partial class Form1
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -98,7 +98,7 @@
             this.txtPassword.Size = new System.Drawing.Size(224, 22);
             this.txtPassword.TabIndex = 6;
             // 
-            // Form1
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -110,8 +110,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.btnRegister);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "LoginForm";
+            this.Text = "Log In";
             this.ResumeLayout(false);
             this.PerformLayout();
 

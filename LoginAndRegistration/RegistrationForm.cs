@@ -54,7 +54,7 @@ namespace LoginAndRegistration
                 UserRepository.NewUser(user);
 
                 Hide();
-                Form1 login = new Form1();
+                LoginForm login = new LoginForm();
                 login.ShowDialog();
                 Close();
             }
